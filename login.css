@@ -1,0 +1,67 @@
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+dialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+dialog form {
+  display: flex;
+  flex-direction: column;
+}
+dialog label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+dialog input[type="text"],
+dialog input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+dialog button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+dialog button:hover {
+    background-color: #218838;
+    }
+dialog .error {
+    color: red;
+    margin-bottom: 10px;
+    }
+dialog .success {
+    color: green;
+    margin-bottom: 10px;
+    }
+dialog .links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    }
+dialog .links a {
+    color: #007bff;
+    text-decoration: none;
+    }
+dialog .links a:hover {
+    text-decoration: underline;
+    }
+dialog .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    }
+    
